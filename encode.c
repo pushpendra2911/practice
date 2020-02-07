@@ -5,8 +5,8 @@
 
 char* strToBinary(char *buff, unsigned int len)
 {
-	char *binaryStr;
-	int i = 0, j = 0, stuffOneCount = 0, stuffZeroCount = 0;
+  char *binaryStr;
+  int i = 0, j = 0, stuffOneCount = 0, stuffZeroCount = 0;
 	int value;
 
 	binaryStr = (char *) malloc((sizeof(char) * 9 * len)+1);
@@ -37,7 +37,6 @@ char* strToBinary(char *buff, unsigned int len)
 				stuffOneCount = 0;
 				stuffZeroCount++;
 			}
-
             if(stuffZeroCount == 5)
             {
 				binaryStr[j++] = '1';
